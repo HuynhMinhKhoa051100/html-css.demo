@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h2>Text fields</h2>
+        <form action="" autocomplete="on">
+            <label for="fname">First Name</label> <br>
+            <input type="text" id="fname" name="fname" value="John"> <br>
+            <label for="lname">Last Name</label> <br>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Radio Buttons</h2>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="Javascript">
+            <label for="javascript">Javascript</label>
+        </form>
+        <h2>Checkboxes</h2>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vahicle1" value="Bike">
+            <label for="vehicle1">Bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Boat</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Textarea</h2>
+        <form>
+            <textarea name="message"  cols="30" rows="10">nhập nội dung</textarea><br><br>
+            <input type="submit">
+        </form>
+        <h2>Button Element</h2>
+        <button type="button" onclick="alert('Hello Khoa')">Click Me</button>
+        <h2>Select Element</h2>
+        <form>
+            <label for="cars">Chọn xe</label>
+            <select name="cars" id="cars">
+                <option value="mec">Mec</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+            </select>
+            <input type="submit">
+        </form>
+    </body>
+</html>
