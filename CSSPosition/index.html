@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.static {
+                position: static;
+                border: 3px solid;
+            }
+            div.relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid;
+            }
+            div.fixed {
+                position: fixed;
+                bottom: 10px;
+                right: 100px;
+                width: 300px;
+                border: 3px solid;
+            }
+            div.absolute {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid;
+            }
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                padding: 5px;
+                background-color: pink;
+                border: 2px solid darksalmon;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static">Static</div><br>
+        <div class="relative">Relative
+            <div class="absolute">Absolute</div>
+        </div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+    </body>
+</html>
