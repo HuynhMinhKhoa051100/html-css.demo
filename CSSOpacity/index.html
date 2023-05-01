@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                opacity: 0.5;
+            }
+            img:hover {
+                opacity: 1.0;
+            }
+            div {
+                background-color: #4caf50;
+                padding: 10px;
+            }
+            div.firt {
+                opacity: 0.1;
+            }
+            div.second {
+                opacity: 0.3;
+            }
+            div.third {
+                opacity: 0.6;
+            }
+            div.background {
+                background: url(image/klematis.jpeg) repeat;
+                border: 2px solid black;
+            }
+            div.transbox {
+                margin: 30px;
+                background-color: #ffff;
+                border: 1px solid black;
+                opacity: 0.6;
+            }
+            div.transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <h1>Image Transparency</h1>
+    <img src="image/hinh-nen-rung-jungle-12.jpeg" alt="hình rừng" width="400" height="200">
+    <img src="image/hinh-nen-rung-jungle-12.jpeg" alt="hình rừng" width="400" height="200">
+    <div><p>opacity(default)</p></div>
+    <div class="firt"><p>opacity 0.1</p></div>
+    <div class="second"><p>opacity 0.3</p></div>
+    <div class="third"><p>opacity 0.6</p></div><br>
+    <div class="background">
+        <div class="transbox">
+            <p>Text in Transparent Box</p>
+        </div>
+    </div>
+</html>
