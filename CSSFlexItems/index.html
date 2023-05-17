@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                background-color: #f1f1f1;
+            }
+            .flex-container > div {
+                background-color: pink;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+            .flex-container1 {
+                display: flex;
+                background-color: #f1f1f1;
+                align-items: stretch;
+            }
+            .flex-container1 > div {
+                background-color: pink;
+                color: white;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+            .flex-container2 {
+                display: flex;
+                align-items: stretch;
+                height: 200px;
+                background-color: #f1f1f1;
+            }
+            .flex-container2>div {
+                background-color: pink;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }  
+        </style>
+    </head>
+    <body>
+        <h1>Child Elements (Items)</h1>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h1>The flex-grow Property</h1>
+        <div class="flex-container1">
+            <div style="flex-grow: 1;">1</div>
+            <div style="flex-grow: 1;">2</div>
+            <div style="flex-grow: 8;">3</div>
+        </div>
+        <h1>The flex-shrink Property</h1>
+            <div class="flex-container2">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-shrink: 0">3</div>
+                <div style="flex-basis: 200px">4</div>
+                <div style="flex: 0 0 200px">5</div>
+                <div style="align-self: center">6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+    </body>
+</html>
